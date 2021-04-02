@@ -24,19 +24,14 @@ if (!$result->success) {
 $hwid = $_POST['hwid'];
 
 try {
-    $hwidsite = file_get_contents('https://dorks.zenservice.xyz/dqzobdqzifqnzhfoqznfqnhqigenfqz.txt', true);
+    $hwidsite = file_get_contents('./test.txt', true);
     if(strpos($hwidsite, $hwid) !== false) {
         // $dir = "./stock_dorks/";
         // $handler = opendir($dir);
         // $files = array_diff($handler, array('.', '..'));
         // echo $files;
         // $nbDir = count(glob("$dir/*"));
-        // if($nbDir === 0) {git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/EnzoPoint/ProjectMouais.git
-git push -u origin main
+        // if($nbDir === 0) {
         //     Header("Location: ./index.php?err=50");
         // } 
         // echo "Nombre de Stock Encore : ". $nbDir;
